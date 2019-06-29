@@ -23,3 +23,23 @@ deactivate
 
 rmvirtualenv env1
 
+Now we can install some software into the environment.
+
+    (env1)$ pip install django
+    Downloading/unpacking django
+      Downloading Django-1.1.1.tar.gz (5.6Mb): 5.6Mb downloaded
+      Running setup.py egg_info for package django
+    Installing collected packages: django
+      Running setup.py install for django
+        changing mode of build/scripts-2.6/django-admin.py from 644 to 755
+        changing mode of /Users/dhellmann/Envs/env1/bin/django-admin.py to 755
+    Successfully installed django
+
+We can see the new package with lssitepackages:
+
+    (env1)$ lssitepackages
+    Django-1.1.1-py2.6.egg-info     easy-install.pth
+    setuptools-0.6.10-py2.6.egg     pip-0.6.3-py2.6.egg
+    django                          setuptools.pth
+
+
