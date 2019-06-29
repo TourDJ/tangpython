@@ -10,6 +10,8 @@ install
     $ source /usr/local/bin/virtualenvwrapper.sh
     $ source ~/.local/bin/virtualenvwrapper.sh (for ubuntu18+)
 
+mkvirtualenv env1
+
 list available environments
 
     workon
@@ -19,5 +21,5 @@ source env1/bin/activate
 
 deactivate
 
-rmvirtualenv venv
+rmvirtualenv env1
 
