@@ -14,4 +14,7 @@
 
     pip show xkit
 
+将pip freeze的内容输出至requirements.txt
 
+    pip freeze | tee requirements.txt # 输出本地包环境至文件
+    pip install -r requirements.txt # 根据文件进行包安装
