@@ -9,6 +9,7 @@ install
     $ mkdir -p $WORKON_HOME
     $ source /usr/local/bin/virtualenvwrapper.sh
     $ source ~/.local/bin/virtualenvwrapper.sh (for ubuntu18+)
+    $ source /usr/bin/virtualenvwrapper.sh (for CentOS7)
 
 mkvirtualenv env1
 
