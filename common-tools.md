@@ -1,7 +1,9 @@
 
+## virtualenvwrapper
 
-### virtualenvwrapper
-install
+virtualenv 用于创建独立的Python环境，多个Python相互独立，互不影响；Virtaulenvwrapper 是virtualenv的扩展包，用于更方便管理虚拟环境。
+
+### virtualenvwrapper install
 
     $ pip install virtualenvwrapper
     ...
@@ -11,19 +13,26 @@ install
     $ source ~/.local/bin/virtualenvwrapper.sh (for ubuntu18+)
     $ source /usr/bin/virtualenvwrapper.sh (for CentOS7)
 
-mkvirtualenv env1
+## 创建虚拟环境
 
-list available environments
+    mkvirtualenv env1
+    mkvirtualenv --python=python3.5 venvname    # --python指定Python解释器程序路径
+
+## list available environments
 
     workon
     workon env1
-    
-source env1/bin/activate
 
-deactivate
+## 激活和解除
 
-rmvirtualenv env1
+    source env1/bin/activate
+    deactivate
 
+## 删除虚拟环境
+
+    rmvirtualenv env1
+
+## 在虚拟环境中安装软件
 Now we can install some software into the environment.
 
     (env1)$ pip install django
